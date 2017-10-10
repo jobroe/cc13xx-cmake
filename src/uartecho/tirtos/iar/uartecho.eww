@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$/uartecho.ewp</path>
+  </project>
+  <project>
+    <path>$SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/kernel/tirtos/builds/CC1310_LAUNCHXL/release/iar/tirtos_builds_CC1310_LAUNCHXL_release.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>
