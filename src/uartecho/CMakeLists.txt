@@ -3,6 +3,8 @@ project(uartecho)
 cmake_minimum_required(VERSION 3.6)
 
 message("CMAKE_MODULE_PATH:  ${CMAKE_MODULE_PATH}")
+
+set(LINKER_SCRIPT "${CMAKE_CURRENT_SOURCE_DIR}/tirtos/gcc/CC1310_LAUNCHXL_TIRTOS.lds")
 include(cc13xx)
 
 find_package(SimpleLinkCC13X0SDK)
