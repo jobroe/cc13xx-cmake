@@ -7,9 +7,9 @@ message("CMAKE_MODULE_PATH:  ${CMAKE_MODULE_PATH}")
 set(LINKER_SCRIPT "${CMAKE_CURRENT_SOURCE_DIR}/tirtos/gcc/CC1310_LAUNCHXL_TIRTOS.lds")
 include(cc13xx)
 
-find_package(SimpleLinkCC13X0SDK)
+find_package(SimpleLinkCC13X0SDK REQUIRED)
 
-find_package(Xdctools)
+find_package(Xdctools REQUIRED)
 
 file(GLOB ${PROJECT_NAME}_SOURCES
     "*.c"
