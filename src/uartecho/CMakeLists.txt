@@ -1,15 +1,23 @@
-project(uartecho)
+##
+## Uatecho Example
+##
 
+project(uartecho)
 cmake_minimum_required(VERSION 3.6)
 
 message("CMAKE_MODULE_PATH:  ${CMAKE_MODULE_PATH}")
 
+# Configure Toolchain for CC13xx
 set(LINKER_SCRIPT "${CMAKE_CURRENT_SOURCE_DIR}/tirtos/gcc/CC1310_LAUNCHXL_TIRTOS.lds")
 include(cc13xx)
 
+# Find dependencies
 find_package(SimpleLinkCC13X0SDK REQUIRED)
-
 find_package(Xdctools REQUIRED)
+
+#
+# Target
+#
 
 file(GLOB ${PROJECT_NAME}_SOURCES
     "*.c"
@@ -25,6 +33,7 @@ include_directories(
 add_executable(${PROJECT_NAME}
     ${${PROJECT_NAME}_SOURCES}
 )
+
 target_link_libraries(${PROJECT_NAME}
     ${SimpleLinkCC13X0SDK_drivers_cc13x0_LIBRARY}
     ${SimpleLinkCC13X0SDK_rf_multiMode_cc13x0_LIBRARY}
@@ -35,5 +44,6 @@ target_link_libraries(${PROJECT_NAME}
     nosys
     c
 )
+
 target_compile_definitions(${PROJECT_NAME} PUBLIC -DDeviceFamily_CC13X0 )
 
