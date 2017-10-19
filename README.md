@@ -1,17 +1,16 @@
 # About
 
 The aim of this project is to provide a software development environment based on CMake, GCC and openOCD for TI's CC13x0 platform.
-This poject is the beginning and currently only tested on LAUNCHXL-CC1310 development kit.
+This project is the beginning and currently only tested on LAUNCHXL-CC1310 development kit.
 
 # Requirements
 
    * CMake >= 3.6
    * GCC arm-none-abi
      * Linux Arch: `arm-none-eabi-gcc` `arm-none-eabi-binutils` `arm-none-eabi-newlib`
-     * Ubuntu packages: `gcc-arm-none-eabi` `gdb-arm-none-eabi` `libnewlib-arm-none-eabi`
+     * Ubuntu packages: Since the package of the official repo is very old it is recommended to use this [PPA](https://launchpad.net/~team-gcc-arm-embedded/+archive/ubuntu/ppa)
    * [SIMPLELINK-CC13X0-SDK](http://www.ti.com/tool/download/SIMPLELINK-CC13X0-SDK)
    * [XDCtools](http://software-dl.ti.com/dsps/dsps_public_sw/sdo_sb/targetcontent/rtsc/index.html)
-
 
 # Features
 
@@ -21,7 +20,7 @@ This poject is the beginning and currently only tested on LAUNCHXL-CC1310 develo
  
 Planned:
  * Debugging and flashing possibilities
- * Building TI-RTOS and Drivers instead of using prebuild libraries
+ * Building TI-RTOS and Drivers instead of using prebuilt libraries
 
 # Usage
 
