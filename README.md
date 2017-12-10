@@ -1,3 +1,6 @@
+
+> **Please note:** At the moment there is no further work on the project because there is currently no possibility to flash a firmware with open source tools (e.g. OpenOCD).
+
 # About
 
 The aim of this project is to provide a software development environment based on CMake, GCC and openOCD for TI's CC13x0 platform.
